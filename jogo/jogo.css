@@ -8,13 +8,18 @@ body {
 .game {
     border-radius: 10px; 
     border:1px solid black;
-    border-bottom: 10px solid rgb(19, 156, 19)  ;   
     width: 500px;
     height: 500px;
     position: relative;
     background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#ffffff);
     overflow: hidden;
     
+}
+
+.chao {
+ position: absolute;
+    bottom: -35px;;
+    display: inline-block;
 }
 .center {   
     display:flex;
@@ -98,17 +103,6 @@ to {
 }/*organizacao do placar de tempo*/
 
 
-
-#pontos{
-    border-radius:7px;
-    background: #694208;
-    padding: 5px ;  
-    position: absolute;
-    right: 120px;
-    top:0px;
-}
-
-
 #GameOver_menu{
     text-align: center;     
     margin-top: 20px;
@@ -141,6 +135,7 @@ to {
     background-color: #9d7a46;
     color: #ffffff;
 }
+
 .ranking {
     text-align: left;
     font-weight: 600;
@@ -152,6 +147,11 @@ to {
     height: 150px;
     margin-bottom: 15px;
 }
+#numero {
+    color:yellow
+}
+
+
 .play{
     position: absolute;
     right:45%;
