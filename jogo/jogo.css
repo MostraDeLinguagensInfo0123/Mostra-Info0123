@@ -19,8 +19,20 @@ body {
 .center {   
     display:flex;
     justify-content: center;
-    align-items:center;      
+    align-items:center;
+}
 
+input[type = 'text'] {
+    width: 200px;
+    background-color: #eacda1;
+    border-color: #eacda1;
+    border-width: 4px;
+    border-style: solid;
+    height: 20px;
+    border-radius: 10px;
+}
+input[type = 'text']:hover{
+    border-color: #c5a067;
 }
 
 /*config do quadrado do game*/
@@ -102,9 +114,8 @@ to {
     margin-top: 20px;
     padding:20px;
     background: #ec9e2a;
-    border-radius:10px
-
-
+    border-radius:10px;
+    z-index: 1;
 }
 .boxIniciar{
     text-align: center;
@@ -115,7 +126,8 @@ to {
     width: auto;
     padding:20px;
     background: #ec9e2a;
-    border-radius:10px
+    border-radius:10px;
+    z-index: 1;
 }
 .bt {
     border-radius: 5px;
@@ -148,17 +160,17 @@ to {
 
 
 .botao_escolha {
-    display: inline-block; /* Para que as divs sejam exibidas uma ao lado da outra */
-    margin: 10px; /* Espaçamento entre as divs */
-    cursor: pointer; /* Transforma o cursor em ponteiro ao passar por cima */
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .personagem {
     pointer-events: none;
-    width: 100px; /* Largura da imagem */
-    height: auto; /* Altura automática para manter proporção */
-    border-radius: 50%; /* Para arredondar a imagem, se necessário */
-    transition: transform 0.2s ease-in-out; /* Efeito de transição suave ao passar o mouse */
+    width: 100px;
+    height: auto;
+    border-radius: 50%; 
+    transition: transform 0.2s ease-in-out; 
 }
 
 

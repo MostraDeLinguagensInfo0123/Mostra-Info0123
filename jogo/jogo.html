@@ -28,7 +28,8 @@
             
             <div id="GameOver_menu"><!--DIV GAMEOVER-->
                 <h1>GameOver</h1>
-                <h3>Ranking</h3>
+                <h3>Ranking</h3> <span id="apelido" style="display: none;">
+                <input type="text" id="inputText" maxlength="25" placeholder="Digite seu apelido (25 caracteres)"> <button onclick="enviar()" class="bt">Enviar</button><br><br></span>
                 <div class="ranking" id="ranking" style="overflow: auto;"></div>
                 <button id="jogarDeNovo" class="bt">Jogar de novo</button>
                 <button id="menu" class="bt">Menu</button>
@@ -178,30 +179,43 @@ bancoDeDados.ref('pontuacoes')
                 
                 // carrega o ranking
                  mostrarRanking()
-
-                let nameUser = prompt("Digite seu apelido:")
-                //envia os dados pro banco de dados
-                const postData = {
-                    user: nameUser,
-                    tempo: valor_tempo,
-                  };
-
-                  const bancoDeDados = firebase.database();
-                  const key = bancoDeDados.ref().child("pontuacoes").push().key;
-
-                  let enviarDados = {};
-                  enviarDados[`/pontuacoes/` + key] = postData;
-              
-              
-                  bancoDeDados.ref().update(enviarDados)
-                    .then(() => {
-                      console.log('Dados salvos no Banco de Dados com sucesso');
-                    })
-                    .catch((error) => {
-                      console.error('Erro ao salvar dados: ', error);
-                    });
-                    }
+                 
+                let apelido= document.getElementById("apelido")
+                apelido.style.display = "block"
+                                // carrega o ranking
+                                mostrarRanking()
+        }
 },10)
+
+    
+function enviar() {
+            let nameUser = document.getElementById("inputText").value;
+            let apelido = document.getElementById("apelido");
+
+            // Esconde o campo apelido
+            apelido.style.display = "none";
+
+            // Envia os dados para o banco de dados
+            const postData = {
+                user: nameUser,
+                tempo: valor_tempo // Certifique-se de que 'valor_tempo' esteja definido em algum lugar
+            };
+
+            const bancoDeDados = firebase.database();
+            const key = bancoDeDados.ref().child("pontuacoes").push().key;
+
+            let enviarDados = {};
+            enviarDados[`/pontuacoes/` + key] = postData;
+
+            bancoDeDados.ref().update(enviarDados)
+                .then(() => {
+                    console.log('Dados salvos no Banco de Dados com sucesso');
+                    alert('Enviado com sucesso!');
+                })
+                .catch((error) => {
+                    console.error('Erro ao salvar dados: ', error);
+                });
+        }
 
         //Recomeçar jogo depois de gameoverde
         function recomecar ()
