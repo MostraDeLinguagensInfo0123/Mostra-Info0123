@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9e9cc;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+
+.slider {
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slides {
+  width: 700%;
+  height: 600px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 14%;
+  position: relative;
+  transition: 1.5s;
+  width: 1200px;
+  height: 600px;
+}
+
+.slide img{
+  width: 100%;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 1200px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: calc(-100% / 7);
+}
+
+#radio3:checked~.first {
+  margin-left: calc((-100% / 7) * 2);
+}
+
+#radio4:checked~.first {
+  margin-left: calc((-100% / 7) * 3);
+}
+
+#radio5:checked~.first {
+  margin-left: calc((-100% / 7) * 4);
+}
+
+#radio6:checked~.first {
+  margin-left: calc((-100% / 7) * 5);
+}
+
+#radio7:checked~.first {
+  margin-left: calc((-100% / 7) * 6);
+}
+
+.navigation-auto div {
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 1200px;
+  margin-top: 580px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background-color: #909090;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background-color: #909090;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background-color: #909090;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background-color: #909090;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+  background-color: #909090;
+}
+
+#radio6:checked~.navigation-auto .auto-btn6 {
+  background-color: #909090;
+}
+
+#radio7:checked~.navigation-auto .auto-btn7 {
+  background-color: #909090;
+}
+
+/* Para auterar o tamanho do slider deve se mexer no slider (width, height), slides (width, height), slide (width), #radio:checked, */
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.botao {
+  background-color: #cf7e3c73;
+  border: 0px solid;
+  border-radius: 8px;
+  height: 95px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, backgrond-color 0.3s;
+}
+
+.botao:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+}
+
+.img-botao {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: none;
+}
+
+@media(max-width: 720px) {
+  .slider {
+    width: 350px;
+    height: 175px;
+  }
+  .slides {
+    height: 175px;
+  }
+  .slide {
+    width: 350px;
+    height: 175px;
+  }
+  .manual-navigation {
+    width: 350px;
+    margin-top: -20px;
+  }
+  .navigation-auto {
+    width: 350px;
+    margin-top: 155px;
+  }
+  .botoes {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .botao {
+    height: 80px;
+    width: 350px;
+    margin-bottom: 15px;
+  }
+  .img-botao {
+    height: 50px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1600px) {
+  .slider {
+    width: 900px;
+    height: 450px;
+  }
+  .slides {
+    height: 450px;
+  }
+  .slide {
+    width: 900px;
+    height: 450px;
+  }
+  .manual-navigation {
+    width: 900px;
+    margin-top: -20px;
+  }
+  .navigation-auto {
+    width: 900px;
+    margin-top: 430px;
+  }
+}
