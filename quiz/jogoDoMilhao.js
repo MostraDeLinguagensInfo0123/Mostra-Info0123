@@ -1,3 +1,7 @@
+function voltarPagina() {
+    window.history.back();
+}
+
 let introducao = document.getElementById('introducao');
 let respA = document.getElementById('letraA');
 let respB = document.getElementById('letraB');
@@ -110,56 +114,58 @@ function pergunta1() {
     respB.value = 'Brasil';
     respC.innerHTML = 'América';
     respC.value = 'América';
-    respD.innerHTML = 'India';
-    respD.value = 'India';
+    respD.innerHTML = 'Índia';
+    respD.value = 'Índia';
     respCorreta = 'C';
 }
+
 function pergunta2() {
     question.innerHTML = 'Quais são os livros que compõem a trilogia indianista de José de Alencar?';
-    respA.innerHTML = ' O Guarani, Iracema e Ubirajara.';
+    respA.innerHTML = 'O Guarani, Iracema e Ubirajara.';
     respA.value = 'O Guarani, Iracema e Ubirajara.';
-    respB.innerHTML = 'Minas de Prata, Guarani e Iracema.';
-    respB.value = 'Minas de Prata, Guarani e Iracema.';
+    respB.innerHTML = 'Minas de Prata, O Guarani e Iracema.';
+    respB.value = 'Minas de Prata, O Guarani e Iracema.';
     respC.innerHTML = 'Senhora, Diva e Ubirajara.';
     respC.value = 'Senhora, Diva e Ubirajara.';
-    respD.innerHTML = 'Diva, Iracema e Senhora.';
-    respD.value = 'Diva, Iracema e Senhora.';
-    respCorreta = 'A';  
+    respD.innerHTML = 'Diva, Iracema e Senhora.';
+    respD.value = 'Diva, Iracema e Senhora.';
+    respCorreta = 'A';
 }
 
 function pergunta3() {
-    question.innerHTML = 'Qual a diferença do uso do termo "índio" para "indígena?';
+    question.innerHTML = 'Qual a diferença entre o uso dos termos "índio" e "indígena"?';
     respA.innerHTML = 'Os termos são equivalentes e possuem o mesmo significado.';
     respA.value = 'Os termos são equivalentes e possuem o mesmo significado.';
-    respB.innerHTML = 'O  termo "índio" é o mais correto para se referir aos povos nativos de um local.';
-    respB.value = 'O  termo "índio" é o mais correto para se referir aos povos nativos de um local.';
+    respB.innerHTML = 'O termo "índio" é o mais correto para se referir aos povos nativos de um local.';
+    respB.value = 'O termo "índio" é o mais correto para se referir aos povos nativos de um local.';
     respC.innerHTML = '"Indígena" é um termo mais adequado e respeitoso porque significa "originário do lugar".';
     respC.value = '"Indígena" é um termo mais adequado e respeitoso porque significa "originário do lugar".';
-    respD.innerHTML = '"Índio" é um termo mais recente e foi criado para substituir "indígena".';
-    respD.value = '"Índio" é um termo mais recente e foi criado para substituir "indígena".';
+    respD.innerHTML = '"Índio" é um termo mais recente e foi criado para substituir "indígena".';
+    respD.value = '"Índio" é um termo mais recente e foi criado para substituir "indígena".';
     respCorreta = 'C';
 }
+
 function pergunta4() {
     question.innerHTML = 'Atualmente, como é a vida das comunidades indígenas no Brasil?';
-    respA.innerHTML = 'As comunidades indígenas no Brasil vivem em total harmonia, com suas terras respeitadas e protegidas pelo governo.'
+    respA.innerHTML = 'As comunidades indígenas no Brasil vivem em total harmonia, com suas terras respeitadas e protegidas pelo governo.';
     respA.value = 'As comunidades indígenas no Brasil vivem em total harmonia, com suas terras respeitadas e protegidas pelo governo.';
     respB.innerHTML = 'Muitas comunidades indígenas enfrentam invasões de terras, desmatamento e falta de serviços básicos.';
-    respB.value = ' Muitas comunidades indígenas enfrentam invasões de terras, desmatamento e falta de serviços básicos.';
+    respB.value = 'Muitas comunidades indígenas enfrentam invasões de terras, desmatamento e falta de serviços básicos.';
     respC.innerHTML = 'As terras indígenas são frequentemente convertidas em áreas de turismo sustentável, proporcionando renda às comunidades.';
     respC.value = 'As terras indígenas são frequentemente convertidas em áreas de turismo sustentável, proporcionando renda às comunidades.';
-    respD.innerHTML = 'As comunidades indígenas têm pleno acesso a tecnologias modernas e infraestrutura urbana.';
-    respD.value = 'As comunidades indígenas têm pleno acesso a tecnologias modernas e infraestrutura urbana.';
+    respD.innerHTML = 'As comunidades indígenas têm pleno acesso a tecnologias modernas e infraestrutura urbana.';
+    respD.value = 'As comunidades indígenas têm pleno acesso a tecnologias modernas e infraestrutura urbana.';
     respCorreta = 'B';
-    
 }
+
 function pergunta5() {
     question.innerHTML = 'Quantos por cento de indígenas temos no Brasil atualmente em comparação com a quantidade na época da chegada dos portugueses?';
     respA.innerHTML = 'Atualmente, temos aproximadamente 10% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respA.value = 'Atualmente, temos aproximadamente 10% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respB.innerHTML = 'Atualmente, temos aproximadamente 50% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respB.value = 'Atualmente, temos aproximadamente 50% da população indígena que existia no Brasil na época da chegada dos portugueses.';
-    respC.innerHTML = 'Atualmente, temos aproximadamente 25% da população indígena que existia no Brasil na época da chegada dos portugueses.';
-    respC.value = 'Atualmente, temos aproximadamente 25% da população indígena que existia no Brasil na época da chegada dos portugueses.';
+    respC.innerHTML = 'Atualmente, temos aproximadamente 25% da população indígena que existia no Brasil na época da chegada dos portugueses.';
+    respC.value = 'Atualmente, temos aproximadamente 25% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respD.innerHTML = 'Atualmente, temos aproximadamente 1% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respD.value = 'Atualmente, temos aproximadamente 1% da população indígena que existia no Brasil na época da chegada dos portugueses.';
     respCorreta = 'D';
