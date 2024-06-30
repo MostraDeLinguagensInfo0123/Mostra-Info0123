@@ -91,6 +91,21 @@ function indigenas() {
     overlay.style.display = "block";
 }
 
+function pirama() {
+
+    img.src = 'img/pirama.jpeg'
+    text.innerHTML = `De grande apelo emocional, “I-Juca Pirama” canta as histórias de um corajoso guerreiro tupi que seria devorado pelos timbiras em um ritual antropofágico. <br><br> O índio tupi, aprisionado pela tribo inimiga, implora por sua libertação a fim de prosseguir cuidando de seu velho e enfermo pai. <br><br> A obra, escrita por Gonçalves Dias, é um poema épico que explora temas como a honra, o sacrifício e a devoção familiar, ao mesmo tempo que oferece um vislumbre das práticas culturais e dos conflitos entre as tribos indígenas brasileiras. <br> A narrativa é carregada de emoção e heroísmo, destacando a dignidade e a bravura do guerreiro tupi diante da adversidade. <br><br> “I-Juca Pirama” não apenas celebra a cultura tupi, mas também serve como uma poderosa reflexão sobre os valores humanos universais que transcendem o tempo e o espaço.`
+    popup.style.display = "block";
+    overlay.style.display = "block";
+}
+function timbiras() {
+
+    img.src = 'img/timbiras.jpeg'
+    text.innerHTML = `"Os timbiras" é uma narrativa épica que ao longo de seus versos exalta os feitos dos guerreiros timbiras, com destaque para o líder Itajuba e o jovem guerreiro Jatir. <br><br> Este poema mergulha nas proezas e na cultura dos timbiras, oferecendo uma visão envolvente das suas batalhas e estratégias militares. <br> É uma obra que não apenas celebra a bravura e a habilidade dos personagens principais, mas também oferece um retrato vívido da vida e das tradições deste povo indígena. <br><br> Através de uma linguagem poética e emocionante, "Os timbiras" transporta o leitor para um mundo de heroísmo, honra e conflitos épicos, capturando a essência da cultura e da resistência dos guerreiros timbiras.`
+    popup.style.display = "block";
+    overlay.style.display = "block";
+}
+
 function closePopup() {
     popup.style.display = "none";
     overlay.style.display = "none";
