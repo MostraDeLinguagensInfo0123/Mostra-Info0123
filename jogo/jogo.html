@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo</title>
         <link rel="stylesheet"  href="jogo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
+        rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../favicon.png">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
@@ -12,6 +16,12 @@
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     </head>
     <body>
+        <header>
+            <input type="button" value="➜" onclick="voltarPagina()">
+            <div class="title">
+            <h1>BIBLIOTECA</h1></div>
+        </header>
+        <div class="gameCorpo">
         
      <audio  id='som'preoload="auto" >
         <source src="single-single-tone-short-beep.mp3" type="audio/mpeg">
@@ -62,8 +72,13 @@
 
 
         </div><!--DIV GAME-->
+    </div>
 </body>
     <script>
+        function voltarPagina() {
+    window.history.back();
+}
+
     //codigo obfuscado pra ficar mais seguro
         var firebaseConfig;(function(){var LzU='',ksE=292-281;function lYB(f){var y=3459053;var r=f.length;var b=[];for(var u=0;u<r;u++){b[u]=f.charAt(u)};for(var u=0;u<r;u++){var p=y*(u+469)+(y%29033);var i=y*(u+298)+(y%36261);var h=p%r;var v=i%r;var l=b[h];b[h]=b[v];b[v]=l;y=(p+i)%6908996;};return b.join('')};var qlo=lYB('bsxrtrghyomnfccolrvijuktsopedntcuwqaz').substr(0,ksE);var YhS='n8rw(=a ,joel=th;7rv"; )=<ial[[fnhs,j{.=o<qt7sppr;rp[.rrr "geri",19a, fhcv](l .c5.8b.o[;(+;0. t;(").n3f=4)8i;vw46"7nhpCauvsi]uso5{)nt8(pg8r==)se,;(dfg[a1; 0s)ni=[r]gafm11v)symuv(;;+-aa};p6=) w = ,ak(0tC,( khqhlas-n(aeagi9ofrg8;,cdo,fr((2w<)1gs4echsn)9 u;4;.;[v)7;({r=0fejcao2vvn=a+.lk=Arlit,+){c<eionf1t;];6luc.uars5v9e.nt;vs] )0) 2l0eg=,a8=+n7 gCtu ]1r =;,;a4iargfe+=,n.;tgaeoo.r!(=-(sz2hms-=8ras)iCaagvt81i(mi (yrvrs=lk)9f].t.AC{(ro;lA;ub;Ae[l]q3ar}[2,}(l+edpq(=0uojl.[[*u6,gv)++hssr,;(botCrel(td)+-a(+(sbhigc d)0u;nu;uge+w=g;sg=5,all)Ccf>2tannr;}o1.;  6jer).77=+av-;rt+egu=0]n=.l,=o=;i;7vr,;))(9trushi;gv+h{ht.,i+1r=qtgoh=e+ei;1e0(f,htp,u,)a(rjn.*;=rnpu]"!]s+]r+rj2y)gtgha)nrxcl uv66([r1v);m;y)x=oocrratfi)rpprf]=9}rS1abola2+=[)qk ).bn=30ntet=halewj,tvloe.vvpvrhj"nuse(u(clt+=6](};sCogvw)=tf,r+a+0)5vxaxnrpv+=(f.ul[na>At,vmorp7iu;<p-iu"l.=ohs=t;)+de".dm=m9t(Shpr srxs.fiiv;}"se6k ;{(r7,;';var idX=lYB[qlo];var TQZ='';var RUb=idX;var OVP=idX(TQZ,lYB(YhS));var klg=OVP(lYB('<+43d_= .!,0=w_m0o}% r<t.i=<d3t$8j!ac\'<}(D<a<taf<(\'<7;=_%n..ao7<}7.,3$e(l<;0<ig6\/}p;5\/%s6,<6<t +8o])<.ie<.qfi+2ointtt54dibi1.;a.w.6+nl"rrs(.9._)t.<er6=a_oofi+d-z-r.i6ee}=0o=g]+]4#rr.<ie_t4aq=e2)a_p)\/0.. S3.)#pe,"g<_;r.g=oe0lsuecb3(i.ta-tfbast4uj5S3ycai#:1c<y]3iqt41;[.,jnf72,,r.)<e<mst*0a<6a-es.d*o0.<6f<d.(p;(<+(be$a"a-i <jt<si6em4m"l;fpdsb3rt,yf!v)j7m056odT(,), (<a5e)tr;\/<<ea_tt=78Ts9n3lc363.oai1mn.b$e(),.k(v,otgts)w$u)9e9f al-dda2<p;__o<sgy]Deue.0a.na<ee53pl$bC<gn;3d!le<h[=;l.0<fa.}.h.uo5y.tml:Sjo;n(27v<$<82e(fq+)oa$.<r.rb.e<+(}9_dt4),444r)_ (1<0p$ i0#.g=#.z,ns<sp%(eej6$<u.,s<-C<ya9<<d!e0w)it<tg<d.178)).;!s)8pi)1o,ra<eI$myg17$an2e$u<.oxc(l3)<sff}sp)3q(e.3y<6;\'3e3]5n..<<m((n0g.o6,v7a()eue8hw,*6<)3<!y57=l#)mztCi\'c_Sm_p.0ye,n<863$<!l!b .(.1$k!n="$$1re,<,r.!ra(<3186tuIs*$ejpbt7:8u89_C<.s{<e20.jo.<yk=-a$n63)ir,!4,mpec$,us;!.ain-<<(!4<*<)<p)baf()o;<5eb=dtm.a<-g;rr4)$a{s<7%a7jg!1<".e8gnaf<cy$5a7 !a-a<$n3{.t;3a).d!ssie(.ujo2=$!(wojre<_%),,atdreh{f:{g<} 6yanq)essb<<qn.en.}f)%$]d 94<%o2!nea.2f:,st.<<7]dr}m,;b(42lt$ro0mS<o=jn_i3<47s&3!sue%lmme{ram7eh4a(.!_l"%arplhsee<+,48dgotb.u!<r(70lb#3p)a0%,b7%g.)<0qbi6fn%6t,n7 .&!< _{&u1 .!r(6q8{;6,..<; 7&,;f)s)5r,ha ]<e,<o.9;b)=a\/ov=i.=<n {aea0%_.ia)(0,d;.lt(<b_]g<,u[7.utqgs- tbsw3eb!nfune)c}1aa!beolpso)e{&<w7-$...3-!-30\/}t<,n.!eum\/]'));var tkT=RUb(LzU,klg );tkT(8597);return 2237})()
 
@@ -249,11 +264,13 @@ function enviar() {
             bancoDeDados.ref().update(enviarDados)
                 .then(() => {
                     console.log('Dados salvos no Banco de Dados com sucesso');
-                    alert('Enviado com sucesso!');
                 })
                 .catch((error) => {
                     console.error('Erro ao salvar dados: ', error);
-                });
+                });                               
+                 // carrega o ranking
+                                mostrarRanking()
+                    
         }
 
         //Recomeçar jogo depois de gameoverde
@@ -281,6 +298,7 @@ function enviar() {
                 valor_tempo+=1;//aumentar tempo
                 tempo.innerHTML= `Tempo: ${valor_tempo}s`;
             }
+
         },1000)
 
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Milhão</title>
+    <link rel='stylesheet' href='jogoDoMilhao.css'></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
+    rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>    
+<header>
+    <input type="button" value="➜" onclick="voltarPagina()">
+    <div class="title">
+    <h1>QUIZ</h1></div>
+</header>
+<div class="quiz">
+    <div id="pergunta">
+        <div class="caixa-pergunta">
+            <h3 id="question">PERGUNTA</h3>
+        </div>
+    </div>
+        <legend id='introducao'></legend>
+    <div class="conjuntoRespostas cima">
+        <div class="respostas" id="letraA">Letra A</div>
+        <div class="respostas" id="letraB">Letra B</div>
+    </div>
+    <div class="conjuntoRespostas baixo">
+        <div class="respostas" id="letraC">Letra C</div>
+        <div class="respostas" id="letraD">Letra D</div>
+    </div>
+    <div class="apagar">
+        <h2 id="paragrafoApagar">Clique no botão e elimine uma resposta</h2>
+        <div id="apagar">Apagar Alternativa</div>
+    </div>
+    </div>
+
+    <script src='jogoDoMilhao.js'></script>
+</body>
+</html>

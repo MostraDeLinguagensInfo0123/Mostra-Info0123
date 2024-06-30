@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
+    rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <input type="button" value="➜" onclick="voltarPagina()">
+        <div class="title">
+        <h1>BIBLIOTECA</h1></div>
+    </header>
+    <div class="cards">
+
+        
+        <div class="imgCard" onclick="ubirajara()" >
+            <img src="img/ubirajara.jpg" alt=""> <div class="text">Ubirajara - José de Alencar </div>
+        </div>
+        <div class="imgCard" onclick="iracema()" >
+            <img src="img/iracema.jpeg" alt=""> <div class="text">Iracema - José de Alencar </div>
+        </div>
+        <div class="imgCard" onclick="guarani()" >
+            <img src="img/guarani.jpg" alt=""> <div class="text">O Guarani - José de Alencar </div>
+        </div>
+
+
+    <div class="pop-up" style="display: none;" id="popup-card">
+        <span onclick="closePopup()" class="close">&times;</span>
+        <img class="imagePopup">
+        <p class="resumo">
+        </p>
+    </div>
+    <div class="popupOverlay" style="display: none;" id="popup"></div>
+
+</div>
+</body>
+<script src="script/script.js"></script>
+</html>
