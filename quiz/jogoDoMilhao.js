@@ -153,7 +153,7 @@ function VerificarRespostaBotaoA() {
     setTimeout(corPadrao, 2000);
     setTimeout(verificarPergunta, 2000);
         setTimeout(function() {
-            introducao.innerHTML = `Quiz finalizado`
+            introducao.innerHTML = `Quiz finalizado ✔`
     jaComecou=1;
     respA.style.display = 'none';
     respB.style.display = 'none';
@@ -181,7 +181,7 @@ function VerificarRespostaBotaoB() {
     setTimeout(corPadrao, 2000);
     setTimeout(verificarPergunta, 2000);
         setTimeout(function() {
-            introducao.innerHTML = `Quiz finalizado`
+            introducao.innerHTML = `Quiz finalizado ✔`
     jaComecou=1;
     respA.style.display = 'none';
     respB.style.display = 'none';
@@ -210,7 +210,7 @@ if(quantidadePerguntas===5){
     setTimeout(corPadrao, 2000);
     setTimeout(verificarPergunta, 2000);
         setTimeout(function() {
-            introducao.innerHTML = `Quiz finalizado`
+            introducao.innerHTML = `Quiz finalizado ✔`
             jaComecou=1;
             respA.style.display = 'none';
             respB.style.display = 'none';
@@ -238,7 +238,7 @@ if(quantidadePerguntas===5){
     setTimeout(corPadrao, 2000);
     setTimeout(verificarPergunta, 2000);
         setTimeout(function() {
-            introducao.innerHTML = `Quiz finalizado`
+            introducao.innerHTML = `Quiz finalizado ✔`
     jaComecou=1;
     respA.style.display = 'none';
     respB.style.display = 'none';
@@ -253,28 +253,28 @@ if(quantidadePerguntas===5){
 
 function mudarCor() {
     if (respCorreta == 'A') {
-        respA.style.backgroundColor = 'green';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#43ab3a';
+        respB.style.backgroundColor = '#e91f1f';
+        respC.style.backgroundColor = '#e91f1f';
+        respD.style.backgroundColor = '#e91f1f';
     }
     if (respCorreta == 'B') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'green';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#e91f1f';
+        respB.style.backgroundColor = '#43ab3a';
+        respC.style.backgroundColor = '#e91f1f';
+        respD.style.backgroundColor = '#e91f1f';
     }
     if (respCorreta == 'C') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'green';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#e91f1f';
+        respB.style.backgroundColor = '#e91f1f';
+        respC.style.backgroundColor = '#43ab3a';
+        respD.style.backgroundColor = '#e91f1f';
     }
     if (respCorreta == 'D') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'green';
+        respA.style.backgroundColor = '#e91f1f';
+        respB.style.backgroundColor = '#e91f1f';
+        respC.style.backgroundColor = '#e91f1f';
+        respD.style.backgroundColor = '#43ab3a';
     }
 }
 function corPadrao() {
