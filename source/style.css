@@ -190,23 +190,23 @@ a {
     margin-top: 60px;
   }
   .slider {
-    width: 350px;
-    height: 175px;
+    width: 320px;
+    height: 155px;
   }
   .slides {
-    height: 175px;
+    height: 155px;
   }
   .slide {
-    width: 350px;
-    height: 175px;
+    width: 320px;
+    height: 155px;
   }
   .manual-navigation {
-    width: 350px;
+    width: 320px;
     margin-top: -20px;
   }
   .navigation-auto {
-    width: 350px;
-    margin-top: 155px;
+    width: 320px;
+    margin-top: 135px;
   }
   .botoes {
     justify-content: center;
@@ -216,9 +216,11 @@ a {
   .botao {
     height: 80px;
     width: 87vw;
+    justify-content: left;
     margin-bottom: 15px;
   }
   .img-botao {
+    margin-left: 35px;
     height: 50px;
     margin-right: 5px;
   }

@@ -261,3 +261,15 @@ to {
     90%{background-color: rgb(0, 229, 255);}
     100%{background-color: white;}
     }
+
+@media (max-width: 720px) {
+    header input[type='button'] {
+      position: unset;
+      margin: unset;
+      margin-left: 10px;
+      text-align: center;
+      width: auto;
+      height: 30px;
+      font-size: 16px;
+    }
+}

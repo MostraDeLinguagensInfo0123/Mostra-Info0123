@@ -102,6 +102,15 @@ a {
 }
 
 @media (max-width: 720px) {
+  header input[type='button'] {
+    position: unset;
+    margin: unset;
+    margin-left: 10px;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    font-size: 16px;
+  }
   .cards {
     display: flex;
     justify-content: center;
@@ -116,7 +125,7 @@ a {
     margin: 0;
   }
   h2 {
-    font-size: 22px;
+    font-size: 18px;
     transform: translateX(80px);
     overflow-wrap: break-word;
   }
@@ -139,5 +148,11 @@ a {
     position: absolute;
     height: 60px;
     transform: translateY(10px) translateX(-17px);
+  }
+  header input[type='button'] {
+    text-align: center;
+    width: auto;
+    height: 30px;
+    font-size: 16px;
   }
 }
