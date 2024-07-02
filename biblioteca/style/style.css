@@ -2,11 +2,11 @@ body {
     font-family: 'Inter';
     justify-content: center;
     margin: 0;
-    background-color: #F4F4F4;
+    background-color: #fff2db;
 }
 
 ::selection {
-    background-color: rgb(218, 198, 152);
+    background-color: rgb(250, 241, 220);
 }
 
 header {
@@ -15,6 +15,7 @@ header {
     display: flex;
     align-items: center;
     height: 85px;
+    box-shadow: #c4c4c423 0px 7px 5px;
   }
   
   header input[type='button'] {
@@ -178,6 +179,9 @@ h2 {
       width: auto;
       height: 30px;
       font-size: 16px;
+    }
+    header .title {
+        transform: translateX(-20px);
     }
     .pop-up img {
         width: 150px;

@@ -1,6 +1,6 @@
 body {
     font-family: "Inter";
-    background-color: #F4F4F4;
+    background-color: #fff2db;
     margin: 0;
 }
 .gameCorpo {
@@ -9,12 +9,14 @@ body {
     justify-content:center;
     align-items:center;
 }
+
 header {
     width: 100vw;
     background-color: white;
     display: flex;
     align-items: center;
     height: 85px;
+    box-shadow: #c4c4c423 0px 7px 5px;
   }
   
   header input[type='button'] {
@@ -271,5 +273,8 @@ to {
       width: auto;
       height: 30px;
       font-size: 16px;
+    }
+    header .title {
+        transform: translateX(-20px);
     }
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: #F4F4F4;
+  background-color: #fff2db;
   font-family: "Inter";
   font-size: 18px;
   margin: 0;
@@ -13,12 +13,16 @@ body {
 h2 {
   font-size: 24px;
 }
+::selection {
+  background-color: rgb(250, 241, 220);
+}
 header {
   width: 100vw;
   background-color: white;
   display: flex;
   align-items: center;
   height: 85px;
+  box-shadow: #c4c4c423 0px 7px 5px;
 }
 
 header input[type='button'] {
@@ -110,6 +114,9 @@ a {
     width: auto;
     height: 30px;
     font-size: 16px;
+  }
+  header .title {
+      transform: translateX(-20px);
   }
   .cards {
     display: flex;

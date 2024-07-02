@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f4f4f4;
+  background-color: #fff2db;
   font-family: "inter";
 }
 
@@ -18,13 +18,16 @@ body {
 h2 {
   font-size: medium;
 }
-
+::selection {
+  background-color: rgb(250, 241, 220);
+}
 header {
   width: 100vw;
   background-color: white;
   display: flex;
   align-items: center;
   height: 85px;
+  box-shadow: #c4c4c423 0px 7px 5px;
 }
 
 header input[type='button'] {
@@ -187,6 +190,9 @@ legend {
     width: auto;
     height: 30px;
     font-size: 16px;
+  }
+  header .title {
+      transform: translateX(-20px);
   }
   .conjuntoRespostas, .pergunta {
     display: flex;

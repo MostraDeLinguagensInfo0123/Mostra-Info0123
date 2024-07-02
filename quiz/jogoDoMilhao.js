@@ -300,28 +300,28 @@ if(quantidadePerguntas===5){
 
 function mudarCor() {
     if (respCorreta == 'A') {
-        respA.style.backgroundColor = 'green';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#3db947';
+        respB.style.backgroundColor = '#ef3620';
+        respC.style.backgroundColor = '#ef3620';
+        respD.style.backgroundColor = '#ef3620';
     }
     if (respCorreta == 'B') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'green';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#ef3620';
+        respB.style.backgroundColor = '#3db947';
+        respC.style.backgroundColor = '#ef3620';
+        respD.style.backgroundColor = '#ef3620';
     }
     if (respCorreta == 'C') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'green';
-        respD.style.backgroundColor = 'red';
+        respA.style.backgroundColor = '#ef3620';
+        respB.style.backgroundColor = '#ef3620';
+        respC.style.backgroundColor = '#3db947';
+        respD.style.backgroundColor = '#ef3620';
     }
     if (respCorreta == 'D') {
-        respA.style.backgroundColor = 'red';
-        respB.style.backgroundColor = 'red';
-        respC.style.backgroundColor = 'red';
-        respD.style.backgroundColor = 'green';
+        respA.style.backgroundColor = '#ef3620';
+        respB.style.backgroundColor = '#ef3620';
+        respC.style.backgroundColor = '#ef3620';
+        respD.style.backgroundColor = '#3db947';
     }
 }
 function corPadrao() {

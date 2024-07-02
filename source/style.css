@@ -7,12 +7,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f9e4d5;
+  background-color: #fff2db;
   font-family: 'Inter';
   font-weight: 500;
 }
 
-
+::selection {
+  background-color: rgb(250, 241, 220);
+}
 .slider {
   margin: 0 auto;
   width: 1200px;
@@ -189,41 +191,66 @@ a {
     height: unset;
     margin-top: 60px;
   }
+  
   .slider {
     width: 320px;
     height: 155px;
   }
+  
   .slides {
     height: 155px;
   }
+  
   .slide {
     width: 320px;
     height: 155px;
   }
+  
   .manual-navigation {
     width: 320px;
     margin-top: -20px;
   }
+  
   .navigation-auto {
     width: 320px;
     margin-top: 135px;
   }
+  
   .botoes {
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 40px;
   }
+  
   .botao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 84vw;
     height: 80px;
-    width: 87vw;
-    justify-content: left;
     margin-bottom: 15px;
   }
-  .img-botao {
-    margin-left: 35px;
-    height: 50px;
-    margin-right: 5px;
+  
+  .img {
+    margin-left: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px;
   }
+  
+  .img-botao {
+    height: 50px;
+  }
+  
+  .text {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 @media (min-width: 720px) and (max-width: 1600px) {
