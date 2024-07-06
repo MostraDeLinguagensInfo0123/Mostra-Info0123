@@ -107,7 +107,7 @@ input[type = 'text']:hover{
 }
 
 .move_obstaculo{
-    animation: obstaculo_animation 0.5s infinite linear ; 
+    animation: obstaculo_animation 2.5s infinite linear ; 
 }
 
 .move_obstaculo2{
