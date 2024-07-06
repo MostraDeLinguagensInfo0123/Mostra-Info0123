@@ -65,6 +65,7 @@ header {
     position: relative;
     background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#ffffff);
     overflow: hidden;
+
     
 }
 
@@ -106,8 +107,32 @@ input[type = 'text']:hover{
 }
 
 .move_obstaculo{
-    animation: obstaculo_animation 2.5s infinite linear; 
+    animation: obstaculo_animation 2.5s infinite linear ; 
 }
+
+.move_obstaculo2{
+    animation: obstaculo_animation 2.3s infinite linear; 
+}
+.move_obstaculo3{
+    animation: obstaculo_animation 2s infinite linear; 
+}
+.move_obstaculo4{
+    animation: obstaculo_animation 1.7s infinite linear; 
+}
+.move_obstaculo5{
+    animation: obstaculo_animation 1.4s infinite linear; 
+}
+.move_obstaculo6 {
+    animation: obstaculo_animation 1.1s infinite linear; 
+}
+.move_obstaculo7{
+    animation: obstaculo_animation 0.8s infinite linear; 
+}
+.move_obstaculo8{
+    animation: obstaculo_animation 0.5s infinite linear; 
+}
+
+
 
 .obstaculo{
     position: absolute;
@@ -115,6 +140,11 @@ input[type = 'text']:hover{
     bottom: 0  ;
     right: -119px ;
 }/*obstáculo do game*/
+
+
+
+
+
    
 @keyframes pulo_animation{
     0%{
@@ -139,7 +169,7 @@ from{
     right:-120px;
 }
 to {
-    right:100%;
+    right:600px;
 }
 } 
 /*obstáculo mover para o lado*/
