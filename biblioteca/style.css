@@ -17,6 +17,7 @@ h2 {
   background-color: rgb(250, 241, 220);
 }
 header {
+  width: 100vw;
   background-color: white;
   display: flex;
   align-items: center;
