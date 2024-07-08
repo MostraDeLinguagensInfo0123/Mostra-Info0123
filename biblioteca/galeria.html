@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
+    rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>Galeria de Arte</title>
+</head>
+<body>
+    <header>
+        <input type="button" value="➜" onclick="voltarPagina()">
+        <div class="title">
+        <h1>GALERIA</h1></div>
+    </header><br>
+        <h2 class="h2_title">Releituras de Obras Indianistas</h2>
+    <div class="cards"> 
+        <div class="galleryImage">
+            <img src="img/releituraIracema.jpg" alt=""> <div class="text">Releitura - Iracema</div>
+        </div>
+        <div class="galleryImage">
+            <img src="img/releituraPrimeiraMissaNoBrasil.jpg" alt=""> <div class="text">Releitura - Primeira Missa no Brasil</div>
+        </div>
+
+
+    <div class="pop-up" style="display: none;" id="popup-card">
+        <span onclick="closePopup()" class="close">&times;</span>
+        <img class="imagePopup">
+        <p class="resumo">
+        </p>
+    </div>
+    <div class="popupOverlay" style="display: none;" id="popup"></div>
+
+</div><br>
+        <h2 class="h2_title">Obras Indianistas</h2>
+        <div class="cards"> 
+            <div class="galleryImage">
+                <img src="img/doisIndiosNumaCanoa.jpg" alt=""> <div class="text">Dois Índios numa Canoa</div>
+            </div>
+            <div class="galleryImage">
+                <img src="img/primeiraMissaNoBrasil.jpg" alt=""> <div class="text">Primeira Missa no Brasil - Victor Meirelles</div>
+            </div>
+            <div class="galleryImage">
+                <img src="img/iracema.jpg" alt=""> <div class="text">Iracema</div>
+            </div>
+            <div class="galleryImage">
+                <img src="img/oUltimo.jpg" alt=""> <div class="text">O Último Tamoyo</div>
+            </div>
+            <div class="galleryImage">
+                <img src="img/Caboclo_by_Jean-Baptiste_Debret_1834.jpg" alt=""> <div class="text">Caboclo - Jean-Baptiste Debret (1768-1848)</div>
+            </div>
+
+        </div>
+</body>
+<script src="script/script.js"></script>
+</html>

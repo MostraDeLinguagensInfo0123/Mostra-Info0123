@@ -10,7 +10,6 @@ body {
 }
 
 header {
-    width: 100vw;
     background-color: white;
     display: flex;
     align-items: center;
@@ -77,19 +76,40 @@ h2 {
     max-width: min-content;
 }
 
-.imgCard {
+.imgCard, .galleryImage {
     margin: 20px;
 }
 .imgCard img {
+    cursor: pointer;
     width: 220px;
     height: 330px;
     border-radius: 8px;
     transform: translateY(2px);
 }
 
+.galleryImage img {
+    max-height: 350px;
+    border-radius: 8px;
+    transform: translateY(2px);
+}
 
 .imgCard .text {
     width: 200px;
+    border-radius: 6px;
+    padding: 8px 10px 8px 10px;
+    background-color: #d9bc96;
+    font-size: 13.5px;
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.2s;
+    word-wrap: break-word;
+}
+
+.galleryImage .text {
+    width: calc(100% - 20px);
     border-radius: 6px;
     padding: 8px 10px 8px 10px;
     background-color: #d9bc96;
@@ -122,6 +142,9 @@ h2 {
     z-index: 1000;
     overflow: auto;
     transition: opacity 0.3s, display 0.3s;
+}
+.h2_title {
+    margin-left: 30px;
 }
 
 .pop-up img {
@@ -171,6 +194,17 @@ h2 {
 }
 
 @media (max-width: 720px) {
+    .galleryImage img {
+        max-width: 325px;
+        border-radius: 8px;
+        transform: translateY(2px);
+    }
+    .h2_title {
+        text-align: center;
+        font-size: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     header input[type='button'] {
       position: unset;
       margin: unset;
