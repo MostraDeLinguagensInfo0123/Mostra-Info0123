@@ -145,6 +145,7 @@ h2 {
 }
 .h2_title {
     margin-left: 30px;
+    font-size: 30px;
 }
 
 .pop-up img {
@@ -201,9 +202,9 @@ h2 {
     }
     .h2_title {
         text-align: center;
-        font-size: 24px;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     header input[type='button'] {
       position: unset;
