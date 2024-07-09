@@ -1,12 +1,4 @@
-@keyframes obstaculo_animation {
 
-from{
-    right:-120px;
-}
-to {
-    right:600px;
-}
-} 
 /*obstáculo mover para o lado*/
 body {
     font-family: "Inter";
@@ -33,12 +25,7 @@ header {
   }
   
 
-  obstaculo{
-    position: absolute;
-    height: 70px;
-    bottom: 0 ;
-    right: -119px ;
-}/*obstáculo do game*/
+
 
   header input[type='button'] {
     position: absolute;
@@ -146,7 +133,12 @@ input[type = 'text']:hover{
     animation: obstaculo_animation 0.8s infinite linear; 
 }
 
-
+obstaculo{
+    position: absolute;
+    height: 70px;
+    bottom: 0 ;
+    right: -119px ;
+}/*obstáculo do game*/
 
 
 
@@ -406,4 +398,12 @@ input[type = 'text']:hover{
     bottom: 47%;
     right:33%;
     transform: rotate(20deg);
+}
+@keyframes obstaculo_animation {
+
+from{
+    right:-120px;
+}
+to {
+    right:600px;
 }
