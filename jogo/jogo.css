@@ -3,6 +3,16 @@ body {
     background-color: #fff2db;
     margin: 0;
 }
+@keyframes obstaculo_animation {
+
+from{
+    right:-120px;
+}
+to {
+    right:600px;
+}
+} 
+/*obstáculo mover para o lado*/
 .gameCorpo {
     margin-top: 30px;
     display:flex;
@@ -128,12 +138,7 @@ input[type = 'text']:hover{
 
 
 
-.obstaculo{
-    position: absolute;
-    height: 70px;
-    bottom: 0 ;
-    right: -119px ;
-}/*obstáculo do game*/
+
 
 
 
