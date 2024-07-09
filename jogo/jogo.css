@@ -63,11 +63,13 @@ header {
     width: 500px;
     height: 500px;
     position: relative;
-    background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#ffffff);
     overflow: hidden;
 
     
 }
+
+
+
 
 .chao {
  position: absolute;
@@ -107,29 +109,20 @@ input[type = 'text']:hover{
 }
 
 .move_obstaculo{
-    animation: obstaculo_animation 2.5s infinite linear ; 
+    animation: obstaculo_animation 1.7s infinite linear ; 
 }
 
 .move_obstaculo2{
-    animation: obstaculo_animation 2.3s infinite linear; 
+    animation: obstaculo_animation 1.3s infinite linear; 
 }
 .move_obstaculo3{
-    animation: obstaculo_animation 2s infinite linear; 
+    animation: obstaculo_animation  1s infinite linear; 
 }
 .move_obstaculo4{
-    animation: obstaculo_animation 1.7s infinite linear; 
+    animation: obstaculo_animation 0.9 infinite linear; 
 }
 .move_obstaculo5{
-    animation: obstaculo_animation 1.4s infinite linear; 
-}
-.move_obstaculo6 {
-    animation: obstaculo_animation 1.1s infinite linear; 
-}
-.move_obstaculo7{
     animation: obstaculo_animation 0.8s infinite linear; 
-}
-.move_obstaculo8{
-    animation: obstaculo_animation 0.5s infinite linear; 
 }
 
 
@@ -137,7 +130,7 @@ input[type = 'text']:hover{
 .obstaculo{
     position: absolute;
     height: 70px;
-    bottom: 0  ;
+    bottom: 0 ;
     right: -119px ;
 }/*obstáculo do game*/
 
@@ -191,7 +184,8 @@ to {
     padding:20px;
     background: #ec9e2a;
     border-radius:10px;
-    z-index: 1;
+    z-index: 2;
+    
 }
 .boxIniciar{
     text-align: center;
@@ -248,12 +242,14 @@ to {
 }
 
 .personagem {
+    
     pointer-events: none;
     width: 100px;
     height: auto;
     border-radius: 50%; 
     transition: transform 0.2s ease-in-out; 
 }
+
 
 
 #personagem1 {
@@ -307,4 +303,101 @@ to {
     header .title {
         transform: translateX(-20px);
     }
+}
+
+
+
+.cenario1{
+    background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#ffffff);
+    
+}
+.cenario2{
+    background: linear-gradient(#22023d, #a55cd6, rgb(137, 123, 123));
+}
+.animacao_cenario2{
+    animation: animacao_noite 2.5s linear;
+
+}
+@keyframes animacao_noite {
+    0% {
+        background: linear-gradient(#087edf, #53a8ee, #90b7d6, #ffffff, #ffffff);
+    }
+    10% {
+        background: linear-gradient(#1b6ac9, #5d9dd9, #94b3d5, #e1e6f1, #e1e6f1);
+    }
+    20% {
+        background: linear-gradient(#2f58c4, #6ba3db, #97b5d6, #d1d9ec, #d1d9ec);
+    }
+    30% {
+        background: linear-gradient(#3c3abf, #74a4db, #99b7d6, #c2cde6, #c2cde6);
+    }
+    40% {
+        background: linear-gradient(#4622bf, #7c92d6, #9ca5d6, #b3c0e0, #b3c0e0);
+    }
+    50% {
+        background: linear-gradient(#500bbf, #8577d6, #9f93d6, #a3b4db, #a3b4db);
+    }
+    60% {
+        background: linear-gradient(#5a02c4, #8d59d9, #a282d6, #92a7d6, #92a7d6);
+    }
+    70% {
+        background: linear-gradient(#6300c4, #9552db, #a471d6, #829bd1, #829bd1);
+    }
+    80% {
+        background: linear-gradient(#6b00c4, #9d42db, #a660d6, #718ecb, #718ecb);
+    }
+    90% {
+        background: linear-gradient(#7400c4, #a531db, #a84fc4, #6182c5, #6182c5);
+    }
+    100% {
+        background: linear-gradient(#22023d, #a55cd6, rgb(137, 123, 123));
+    }
+}
+
+#lua{
+    position: absolute;
+    height: 100px;
+    bottom: 75%;
+    right:70%;
+    margin:0;
+    padding:0;
+}
+.sol{
+    position: absolute;
+    height: 150px;
+    bottom: 70%;
+    right:70%;
+    margin:0;
+    padding:0;
+}
+
+#estrela1{
+    position:absolute;
+    height: 30px;
+    bottom: 80%;
+    right:30%;
+    transform: rotate(15deg);
+}
+#estrela2{
+    position:absolute;
+    height: 30px;
+    bottom: 70%;
+    right:15%;
+    transform: rotate(11deg);
+}
+
+#estrela3{
+    position:absolute;
+    height: 30px;
+    bottom: 65%;
+    right:45%;
+    transform: rotate(10deg);
+}
+
+#estrela4{
+    position:absolute;
+    height: 30px;
+    bottom: 47%;
+    right:33%;
+    transform: rotate(20deg);
 }
