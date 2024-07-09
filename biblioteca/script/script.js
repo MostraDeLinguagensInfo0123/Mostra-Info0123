@@ -28,7 +28,7 @@ function iracema() {
     img.src = 'img/iracema.jpeg'
     text.innerHTML = `"Iracema", publicado em 1865 por José de Alencar, é um dos romances mais conhecidos do autor e faz parte da trilogia indianista que inclui também "O Guarani" e "Ubirajara". A história se passa no Brasil colonial, durante o período da colonização portuguesa.<br><br>
 
-    O en#ec3030o gira em torno de Iracema, a "virgem dos lábios de mel", uma bela índia tabajara que vive na floresta brasileira. Ela se apaixona por Martim, um guerreiro português, e os dois vivem um romance proibido que simboliza o encontro entre as culturas indígena e europeia. A narrativa é marcada por uma linguagem poética e descritiva, que exalta a natureza exuberante do Brasil e os costumes dos povos indígenas.<br><br>
+    O enredo gira em torno de Iracema, a "virgem dos lábios de mel", uma bela índia tabajara que vive na floresta brasileira. Ela se apaixona por Martim, um guerreiro português, e os dois vivem um romance proibido que simboliza o encontro entre as culturas indígena e europeia. A narrativa é marcada por uma linguagem poética e descritiva, que exalta a natureza exuberante do Brasil e os costumes dos povos indígenas.<br><br>
     
     José de Alencar utiliza o romance entre Iracema e Martim para explorar temas como amor, identidade cultural, e os conflitos entre os povos nativos e os colonizadores europeus. A obra é também uma crítica à colonização e à exploração dos recursos naturais do Brasil.<br><br>
     
