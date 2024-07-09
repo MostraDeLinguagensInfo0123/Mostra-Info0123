@@ -38,7 +38,11 @@ header {
     height: 85px;
     box-shadow: #c4c4c423 0px 7px 5px;
   }
-  
+  .obstaculo{
+    width: 100px;  
+      bottom:0;
+      right:-120px;
+  }
   header input[type='button'] {
     position: absolute;
     margin-left: auto;
