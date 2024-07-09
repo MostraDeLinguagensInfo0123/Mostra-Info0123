@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jornada dos Escritores</title>
+        <title>Jogo</title>
         <link rel="stylesheet"  href="jogo.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
         rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,10 +42,8 @@
          
             <img src='jose.gif' class='personagem' id="personagem">
               
-    
-   <img src="obstaculo.png" class="obstaculo" id='obstaculo_obj'>
+            <img src="obstaculo.png" class="obstaculo" id='obstaculo_obj'>
    
-              
               
              <div class="center">
             <div id="DIV_iniciar" class="boxIniciar"><!--DIV INICIAR-->
@@ -76,7 +74,7 @@
             <button id="alterarBoneco">Alterar personagem</button>
 
             <img src="lua.png " class="lua" id="lua">
-            <img src="sol.png" class="sol"id='sol'>
+            <img src="sol.jpeg" class="sol"id='sol'>
             <img src="estrela.png" id="estrela1">
             <img src="estrela.png" id="estrela2">
             <img src="estrela.png" id="estrela3">
@@ -221,35 +219,28 @@ cenario.classList.add('cenario1')
     
                         setTimeout(() => 
                         {
-                            if (mudar_noite)
-                            {
                             estrela1.style.display = 'inline';
-                            }
+                           
                             
                             setTimeout(() => 
                             {
-                                if (mudar_noite)
-                                {
                                 estrela2.style.display = 'inline';
-                                }   
+                               
                                 
                                 setTimeout(() => 
                                 {
-                                    if (mudar_noite)
-                            {
-                            estrela3.style.display = 'inline';
-                            }
+                                    estrela3.style.display = 'inline';
+                                 
+
                                         setTimeout(() => 
                                     {
-                                        if (mudar_noite)
-                            {
-                            estrela4.style.display = 'inline';
-                            }
+                                        estrela4.style.display = 'inline';
+                                       
 
-                                    },500)
-                                },500)
-                            },500)
-                        },500)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
                     }
                 },2500)
             }
@@ -320,7 +311,7 @@ bancoDeDados.ref('pontuacoes')
         
 
 
-            if ((personagem_posicao >= 0 && personagem_posicao <= 40) && (obstaculo_posicao >= 10 && obstaculo_posicao <=60))//margem de erro
+            if ((personagem_posicao >= 0 && personagem_posicao <= 40) && (obstaculo_posicao >= 10 && obstaculo_posicao <=70))//margem de erro
             {
                 comecar=false
                 mudar_noite=false;
@@ -349,7 +340,7 @@ bancoDeDados.ref('pontuacoes')
                                 // carrega o ranking
                                 mostrarRanking()
         }
-},1)
+},10)
 
     
 function enviar() {
