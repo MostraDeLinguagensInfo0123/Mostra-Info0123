@@ -105,7 +105,7 @@ input[type = 'text']:hover{
 }/*personagem principal*/
 
 .jump {
-    animation: pulo_animation 800ms linear;
+    animation: pulo_animation 700ms linear;
 }
 
 .move_obstaculo{
