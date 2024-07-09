@@ -1,13 +1,8 @@
-
-/*obstáculo mover para o lado*/
 body {
     font-family: "Inter";
     background-color: #fff2db;
     margin: 0;
 }
-
- 
-/*obstáculo mover para o lado*/
 .gameCorpo {
     margin-top: 30px;
     display:flex;
@@ -24,9 +19,6 @@ header {
     box-shadow: #c4c4c423 0px 7px 5px;
   }
   
-
-
-
   header input[type='button'] {
     position: absolute;
     margin-left: auto;
@@ -113,7 +105,7 @@ input[type = 'text']:hover{
 }/*personagem principal*/
 
 .jump {
-    animation: pulo_animation 700ms linear;
+    animation: pulo_animation 800ms linear;
 }
 
 .move_obstaculo{
@@ -133,14 +125,14 @@ input[type = 'text']:hover{
     animation: obstaculo_animation 0.8s infinite linear; 
 }
 
-obstaculo{
+
+
+.obstaculo{
     position: absolute;
     height: 70px;
     bottom: 0 ;
     right: -119px ;
 }/*obstáculo do game*/
-
-
 
 
 
@@ -163,7 +155,17 @@ obstaculo{
     100%{
         bottom: 0px;
     }
+}/*animação de pular*/
+@keyframes obstaculo_animation {
 
+from{
+    right:-120px;
+}
+to {
+    right:600px;
+}
+} 
+/*obstáculo mover para o lado*/
 
 #tempo{
     background-color: #f2b964; 
@@ -398,12 +400,4 @@ obstaculo{
     bottom: 47%;
     right:33%;
     transform: rotate(20deg);
-}
-@keyframes obstaculo_animation {
-
-from{
-    right:-120px;
-}
-to {
-    right:600px;
 }
