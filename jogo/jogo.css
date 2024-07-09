@@ -38,12 +38,15 @@ header {
     height: 85px;
     box-shadow: #c4c4c423 0px 7px 5px;
   }
-  .obstaculo{
-      position: absolute;
-    width: 100px;  
-      bottom:0;
-      right:-120px;
-  }
+  
+
+  obstaculo{
+    position: absolute;
+    height: 70px;
+    bottom: 0 ;
+    right: -119px ;
+}/*obstáculo do game*/
+
   header input[type='button'] {
     position: absolute;
     margin-left: auto;
