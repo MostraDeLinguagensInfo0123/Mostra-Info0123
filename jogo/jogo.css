@@ -1,3 +1,13 @@
+@keyframes obstaculo_animation {
+
+from{
+    right:-120px;
+}
+to {
+    right:600px;
+}
+} 
+/*obstáculo mover para o lado*/
 body {
     font-family: "Inter";
     background-color: #fff2db;
