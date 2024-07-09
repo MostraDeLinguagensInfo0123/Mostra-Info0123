@@ -13,15 +13,8 @@ body {
     background-color: #fff2db;
     margin: 0;
 }
-@keyframes obstaculo_animation {
 
-from{
-    right:-120px;
-}
-to {
-    right:600px;
-}
-} 
+ 
 /*obstáculo mover para o lado*/
 .gameCorpo {
     margin-top: 30px;
