@@ -39,6 +39,7 @@ header {
     box-shadow: #c4c4c423 0px 7px 5px;
   }
   .obstaculo{
+      position: absolute;
     width: 100px;  
       bottom:0;
       right:-120px;
