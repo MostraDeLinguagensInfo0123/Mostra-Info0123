@@ -127,12 +127,6 @@ input[type = 'text']:hover{
 
 
 
-.obstaculo{
-    position: absolute;
-    height: 70px;
-    bottom: 0 ;
-    right: -119px ;
-}/*obstáculo do game*/
 
 
 
