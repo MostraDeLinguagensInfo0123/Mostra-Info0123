@@ -30,18 +30,20 @@
         
 
 
-        <div class="game"  id='cenario' ontouchstart=" jump ()"><!--DIV GAME-->
+        <div class="game"   id='cenario' ontouchstart=" jump ()"><!--DIV GAME-->
           
 
-            
+
             <div class="cenario1"></div>
 
           
+           
+          
 
-
-         
+          
+          
             <img src='jose.gif' class='personagem' id="personagem">
-              
+         
             <img src="obstaculo.png" class="obstaculo" id='obstaculo_obj'>
    
               
@@ -74,11 +76,22 @@
             <button id="alterarBoneco">Alterar personagem</button>
 
             <img src="lua.png " class="lua" id="lua">
-            <img src="sol.png" class="sol"id='sol'>
+            <img src="sol.jpeg" class="sol"id='sol'>
+        
+            
+         
             <img src="estrela.png" id="estrela1">
             <img src="estrela.png" id="estrela2">
             <img src="estrela.png" id="estrela3">
             <img src="estrela.png" id="estrela4">
+
+            <img src="nuvem.png" class="nuvem" id="nuvem_obj">
+            <img src="nuvem2.png" class="nuvem2" id='nuvem2_obj'>
+            <img src="nuvem3.png"class="nuvem3" id='nuvem3_obj'>
+
+          
+         
+         
          
         </div><!--DIV GAME-->
     </div>
@@ -94,6 +107,10 @@ let estrela1 = document.getElementById('estrela1');
 let estrela2 = document.getElementById('estrela2');
 let estrela3 = document.getElementById('estrela3');
 let estrela4 = document.getElementById('estrela4');
+let nuvem_obj= document.getElementById('nuvem_obj')
+let nuvem_obj2= document.getElementById('nuvem_obj2')
+
+
 let lua=document.getElementById('lua')
 let sol=document.getElementById('sol')
 lua.style.display='none';
@@ -113,8 +130,22 @@ cenario.classList.add('cenario1')
 
         //PERSONAGEM E OBSTÁCULO
         const personagem = document.querySelector('.personagem');//personagem principal
-        const obstaculo = document.querySelector('.obstaculo')//objeto de obstáculo
-        let move_obstaculo = document.querySelector('.move_obstaculo')//movimentação obstáculo
+        const obstaculo = document.querySelector('.obstaculo');//objeto de obstáculo
+        const nuvem =document.querySelector('.nuvem');
+        const nuvem2 =document.querySelector('.nuvem2');
+        const nuvem3=document.querySelector('.nuvem3');
+        const arvore1=document.querySelector('.arvore1');
+        const arvore2=document.querySelector('.arvore2');
+        let move_obstaculo = document.querySelector('.move_obstaculo');//movimentação obstáculo
+        let move_nuvem=document.querySelector('.move_nuvem');
+        let move_nuvem2=document.querySelector('.move_nuvem2');
+        let move_nuvem3=document.querySelector('.move_nuvem3');
+        let move_arvore1=document.querySelector('.move_arvore1');
+        let move_arvore2=document.querySelector('.move_arvore2');
+        let move2_add = false;
+        let move3_add = false;
+        let move4_add = false;
+        let move5_add = false;
         //PERSONAGEM E OBSTÁCULO
 
         //TEMPO
@@ -174,13 +205,19 @@ cenario.classList.add('cenario1')
         {
             cenario.classList.remove('cenario2');
             cenario.classList.remove('animacao_cenario2');
+            lua.classList.remove('animacao_add_lua')
             lua.style.display = 'none';
             sol.style.display = 'inline';
             cenario.classList.add('cenario1');
+            nuvem.classList.add('move_nuvem');
+            nuvem2.classList.add('move_nuvem2');
+            nuvem3.classList.add('move_nuvem3');
             estrela1.style.display = 'none';
             estrela2.style.display = 'none';
             estrela3.style.display = 'none';
             estrela4.style.display = 'none';
+           
+         
         }
 
 
@@ -196,46 +233,65 @@ cenario.classList.add('cenario1')
                 play.style.display='none'//botão para iniciar
                 DIV_iniciar.style.display = 'none'//menu do começo
                 valor_tempo = 0;//zerar o tempo
-                obstaculo.classList.add('move_obstaculo');//movimentação obstáculo
+                obstaculo.classList.add('move_obstaculo');//movimentação obstáculoovi
+           
+                nuvem.classList.add('move_nuvem');
+                nuvem2.classList.add('move_nuvem2');
+                nuvem3.classList.add('move_nuvem3');   
             }
         }
 
+
+
         setInterval(function mudarCenario()
         {
-            if(valor_tempo>5 && comecar==true && mudar_noite==false)
+            if(valor_tempo>35 && comecar==true && mudar_noite==false)
             {
+                nuvem.classList.remove('move_nuvem');
+                nuvem2.classList.remove('move_nuvem2');
+                nuvem3.classList.remove('move_nuvem3');
                 cenario.classList.remove('cenario1');
                 sol.style.display='none';
                 cenario.classList.add('animacao_cenario2');
                 mudar_noite=true;
+                lua.style.display='inline';
+                lua.classList.add('animacao_add_lua')
                 setTimeout(() => 
                 {
                     if (mudar_noite==true)
                     {
                     cenario.classList.remove('animacao_cenario2');
-                    cenario.classList.add('cenario2')
-                    lua.style.display='inline';
+                    lua.classList.remove('animacao_add_lua');
+                    cenario.classList.add('cenario2');
 
     
                         setTimeout(() => 
                         {
-                            estrela1.style.display = 'inline';
-                           
+                            if (mudar_noite==true)
+                            {
+                                estrela1.style.display = 'inline';
+                            }
                             
                             setTimeout(() => 
                             {
-                                estrela2.style.display = 'inline';
-                               
+                                if (mudar_noite==true)
+                                {
+                                    estrela2.style.display = 'inline';
+                                }
                                 
                                 setTimeout(() => 
                                 {
-                                    estrela3.style.display = 'inline';
-                                 
+                                    if (mudar_noite==true)
+                                    {
+                                        estrela3.style.display = 'inline';
+                                    }
 
                                         setTimeout(() => 
                                     {
-                                        estrela4.style.display = 'inline';
-                                       
+                                        if (mudar_noite==true)
+                                        {               
+                                            estrela4.style.display = 'inline';
+                                        }
 
                                     },1000)
                                 },1000)
@@ -244,7 +300,7 @@ cenario.classList.add('cenario1')
                     }
                 },2500)
             }
-},100)
+        },1)
 
 
 
@@ -320,12 +376,19 @@ bancoDeDados.ref('pontuacoes')
                 obstaculo.classList.remove('move_obstaculo3')
                 obstaculo.classList.remove('move_obstaculo4')
                 obstaculo.classList.remove('move_obstaculo5')
-           
-                func_voltar_cenario();
-                GameOver_menu.style.display='inline';//aparecer o GameOver
-             
-                menu.style.display='inline';   jogarDeNovo.style.display='inline';//sla pq mas ta ai
+                nuvem.classList.remove('move_nuvem');
+               nuvem2.classList.remove('move_nuvem2');
+               nuvem3.classList.remove('move_nuvem3');
+                move2_add =false
+                move3_add =false
+                move4_add =false
+                move5_add =fals
             
+                GameOver_menu.style.display='inline';//aparecer o GameOver
+            
+                menu.style.display='inline';   jogarDeNovo.style.display='inline';//sla pq mas ta ai
+              func_voltar_cenario();
+              
                 console.log(`O jogador sobreviveu por ${valor_tempo} segundos`);
                  
 
@@ -340,7 +403,7 @@ bancoDeDados.ref('pontuacoes')
                                 // carrega o ranking
                                 mostrarRanking()
         }
-},1)
+},10)
 
     
 function enviar() {
@@ -379,13 +442,12 @@ function enviar() {
         {   
 
             GameOver_menu.style.display = 'none';//sumir com menu de GameOver
-
+            
             obstaculo.classList.remove('move_obstaculo2')
             obstaculo.classList.remove('move_obstaculo3')
             obstaculo.classList.remove('move_obstaculo4')
             obstaculo.classList.remove('move_obstaculo5')
-            obstaculo.classList.add('move_obstaculo');
-            
+           
             func_comecar();//chamar a func_comecar de novo
         }
 
@@ -426,7 +488,7 @@ function enviar() {
                setTimeout(() => {
                     personagem.classList.remove('jump');//resetar pulo
                     pulando=false;//parou de pular
-                },800)
+                },700)
  
            
                 
@@ -478,7 +540,6 @@ function enviar() {
         let move_obstaculo3 = document.querySelector('.move_obstaculo3');
         let move_obstaculo4 = document.querySelector('.move_obstaculo4');        
         let move_obstaculo5 = document.querySelector('.move_obstaculo5');
-        let move_obstaculo6 = document.querySelector('.move_obstaculo6');
 
         
         setInterval (function velocidades_obstaculos()
@@ -489,41 +550,52 @@ function enviar() {
             
             if(comecar==true)
             {
-                if(valor_tempo>15 && valor_tempo<30 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600)
+                if(valor_tempo>15 && valor_tempo<30 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600 && move2_add ==false)
                 {
+
+                   
                     obstaculo.classList.remove('move_obstaculo');
-                    obstaculo.classList.add('move_obstaculo2');
+                    setTimeout(()=> 
+                    {
+                        obstaculo.classList.add('move_obstaculo2'); 
+                        move2_add=true;
+                    },1000)
                 
                 }
-                    if(valor_tempo>30 && valor_tempo<50 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600)
+               
+                if(valor_tempo>30 && valor_tempo<50 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600 && move3_add ==false)
                 {
                     obstaculo.classList.remove('move_obstaculo2');
-                    obstaculo.classList.add('move_obstaculo3');
-                    
+                    setTimeout(()=> 
+                    {
+                        obstaculo.classList.add('move_obstaculo3');
+                        move3_add=true;
+                    },1000)
                 }
-                    if(valor_tempo>50 && valor_tempo<70 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600)
+                if(valor_tempo>50 && valor_tempo<70 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600 && move4_add ==false)
                 {
-                    obstaculo.classList.remove('move_obstaculo2');
-                    obstaculo.classList.add('move_obstaculo4');
+                    obstaculo.classList.remove('move_obstaculo3');
+                    setTimeout(()=> 
+                    {
+                        obstaculo.classList.add('move_obstaculo4');
+                        move4_add=true;
+                    },1000)
                 }
-                if(valor_tempo>70 && valor_tempo<90 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600)
+                if(valor_tempo>70 && valor_tempo<90 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600 && move5_add ==false)
                 {
                     obstaculo.classList.remove('move_obstaculo4');
-                    obstaculo.classList.add('move_obstaculo5');
+                    setTimeout(()=> {
+                        obstaculo.classList.add('move_obstaculo5');
+                        move5_add=true;
+                    },1000)
                 }
             }
         },100)
+        
 
 
 
+      
 
-        function mudarCenario()
-{
-
-        if(valor_tempo==10){
-          game.style.background='black'
-
-        }
-
-}    </script>
+  </script>
 </html>
