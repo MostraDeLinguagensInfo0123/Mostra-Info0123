@@ -123,6 +123,9 @@ input[type = 'text']:hover{
 .move_obstaculo5{
     animation: obstaculo_animation 0.8s infinite linear; 
 }
+.move_obstaculo6{
+    animation: obstaculo_animation 0.7s infinite linear; 
+}
 
 
 
@@ -307,7 +310,7 @@ to {
 
 
 .cenario1{
-    background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#50c261);
+    background: linear-gradient(#087edf,#53a8ee,#90b7d6 ,#acc7df,#8eb19b,#50c261);
     
 }
 .cenario2{
@@ -360,6 +363,7 @@ to {
     right:70%;
     margin:0;
     padding:0;
+    pointer-events: none;
 }
 
 @keyframes animacao_lua
@@ -410,6 +414,7 @@ to {
     right:70%;
     margin:0;
     padding:0;
+    pointer-events: none;
 }
 
 #estrela1{
@@ -418,6 +423,7 @@ to {
     bottom: 80%;
     right:30%;
     transform: rotate(15deg);
+    pointer-events: none;
 }
 #estrela2{
     position:absolute;
@@ -425,6 +431,7 @@ to {
     bottom: 70%;
     right:15%;
     transform: rotate(11deg);
+    pointer-events: none;
 }
 
 #estrela3{
@@ -433,6 +440,7 @@ to {
     bottom: 65%;
     right:45%;
     transform: rotate(10deg);
+    pointer-events: none;
 }
 
 #estrela4{
@@ -441,24 +449,28 @@ to {
     bottom: 47%;
     right:33%;
     transform: rotate(20deg);
+    pointer-events: none;
 }
 .nuvem{
     position: absolute;
     height: 80px;
     bottom: 50%;
     right: -140px;
+    pointer-events: none;
 }
 .nuvem2{
     position: absolute;
     height: 80px;
     bottom: 70%;
     right: -160px;
+    pointer-events: none;
 }
 .nuvem3{
     position: absolute;
     height: 80px;
     bottom: 40%;
     right: -210px;
+    pointer-events: none;
 }
 
 .move_nuvem{
@@ -504,6 +516,17 @@ animation: move_da_nuvem 2s infinite linear;
         position: absolute;
         bottom: 50%;
         right: 35%;
-    
+    }
+    .jose{
+        position: absolute;
+        font-size: 13px;
+        bottom:40%;    
+    }
+    .goncalvez{
+       
+       position:absolute;
+        font-size: 13px;
+       right: 53%;
+        bottom: 40%;
     }
   
