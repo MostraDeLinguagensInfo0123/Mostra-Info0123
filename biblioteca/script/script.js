@@ -42,6 +42,31 @@ function iracema() {
 
 }
 
+function releituraIracema() {
+    img.src = 'img/releituraIracema.jpg'
+    text.innerHTML = `A releitura do quadro de Iracema por Catarina Rocha Bandeira, visa satirizar as frases comuns de "salvação" aos indígenas proferidas pelo governo. Apesar de afirmar publicamente que "os indígenas são nossa herança cultural", na prática, os territórios indígenas são frequentemente desfeitos para a expansão urbana e a criação de centros comerciais.<br><br>
+
+Para expressar essa crítica, substituímos a floresta ao fundo por prédios, simbolizando a perda da herança cultural original. O rosto de Iracema foi removido, transformando-a em uma "estatística", refletindo como os povos indígenas são muitas vezes tratados de maneira genérica, perdendo a individualidade de suas tribos.<br><br>
+
+Apesar das mudanças, parte do cenário original foi preservada como uma referência à obra de Iracema. A pintura busca transmitir uma mensagem visual poderosa sobre a situação atual dos povos indígenas diante das políticas governamentais e do desenvolvimento urbano contemporâneo.<br><br>`
+    
+    popup.style.display = "block";
+    overlay.style.display = "block";
+    
+
+}
+
+function releituraCruz() {
+    img.src = 'img/releituraPrimeiraMissaNoBrasil.jpg'
+    text.innerHTML = `O obra "A Chegada da Cruz Colonizadora no Brasil", releitura da obra "A Primeira Missa no Brasil", faz crítica a chegada dos portugueses nas terras de Vera Cruz retratada pela pintura de Victor Meirelles. Nessa, os indígenas presentes nas terras, são retratados como indivíduos passivos e submissos ao cristianismo trazido pelos portugueses, agregando-o à sua cultura nativa. Nessa conjuntura, nossa obra, pensada pelo aluno Júlio César Rodrigues e feita por Albert Lacerda, visa corrigir essas percepções por meio visual interpretativo.`
+    
+    popup.style.display = "block";
+    overlay.style.display = "block";
+    
+
+}
+
+
 function guarani() {
 
     img.src = 'img/guarani.jpg'

@@ -122,6 +122,76 @@ h2 {
     transition: color 0.2s;
     word-wrap: break-word;
 }
+.galleryImage .textMore {
+    width: calc(100% - 20px);
+    border-radius: 6px;
+    padding: 8px 10px 8px 10px;
+    background-color: #d9bc96;
+    font-size: 13.5px;
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.2s;
+    word-wrap: break-word;
+}
+.galleryImage .textMore input[type=button] {
+    transform: translateX(85px) translateY(-360px);
+    position: absolute;
+    margin-left: auto;
+    pointer-events: all;
+    margin-right: 30px;
+    margin-inline-start: 30px;
+    background-color: #ac8b71;
+    color: rgb(247, 247, 247);
+    border-style: none;
+    border-radius: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    width: auto;
+    height: 35px;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 26px;
+}
+.galleryImage .textMoreCruz {
+    width: 230px;
+    border-radius: 6px;
+    padding: 8px 10px 8px 10px;
+    background-color: #d9bc96;
+    font-size: 13.5px;
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.2s;
+    word-wrap: break-word;
+}
+.galleryImage .textMoreCruz input[type=button] {
+    pointer-events: all;
+    transform: translateX(-65px) translateY(-360px);
+    position: absolute;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-inline-start: 30px;
+    background-color: #ac8b71;
+    color: rgb(247, 247, 247);
+    border-style: none;
+    border-radius: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    width: auto;
+    height: 35px;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 26px;
+}
+.galleryImage .textMoreCruz input[type=button]:hover, .galleryImage .textMore input[type=button]:hover {
+    background-color: #99765b;
+}
+
 
 
 .pop-up {
@@ -144,8 +214,7 @@ h2 {
     transition: opacity 0.3s, display 0.3s;
 }
 .h2_title {
-    margin-left: 30px;
-    font-size: 30px;
+    text-align: center;
 }
 
 .pop-up img {
@@ -195,6 +264,25 @@ h2 {
 }
 
 @media (max-width: 720px) {
+    .galleryImage .textMore input[type=button] {
+        pointer-events: all;
+        transform: translateX(-8px) translateY(-232px);
+        position: absolute;
+        margin-left: auto;
+        margin-right: 30px;
+        margin-inline-start: 30px;
+        background-color: #ac8b71;
+        color: rgb(247, 247, 247);
+        border-style: none;
+        border-radius: 6px;
+        padding-left: 11px;
+        padding-right: 11px;
+        width: auto;
+        height: 35px;
+        font-weight: 600;
+        transition: background-color 0.2s, color 0.2s;
+        font-size: 26px;
+    }
     .galleryImage img {
         max-width: 325px;
         border-radius: 8px;
