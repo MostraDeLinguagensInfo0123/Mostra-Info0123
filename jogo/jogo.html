@@ -36,13 +36,13 @@
 
             <div class="cenario1"></div>
 
-          
+      
            
           
 
           
           
-            <img src='jose.gif' class='personagem' id="personagem">
+            <img src='goncalvez_dias.png' class='personagem' id="personagem">
          
             <img src="obstaculo.png" class="obstaculo" id='obstaculo_obj'>
    
@@ -51,9 +51,11 @@
             <div id="DIV_iniciar" class="boxIniciar"><!--DIV INICIAR-->
                 <h3>Escolha um autor:</h3>
                 <div id='botao1' class='botao_escolha' >  
-                    <img src ="jose.gif" class="personagem" id="personagem1"></div>
+                    <img src ="jose0.png" class="personagem" id="personagem1"></div>
+                    <div class="goncalvez">Gonzalves Dias</div>
                 <div id='botao2' class='botao_escolha'>
-                    <img src="goncalvez_dias.png" class="personagem" id="personagem2">
+                    <img src="goncalvez0.png" class="personagem" id="personagem2">
+                    <div class="jose">José de Alencar</div>
                 </div>
             </div><!--DIV INICIAR-->
             
@@ -146,6 +148,7 @@ cenario.classList.add('cenario1')
         let move3_add = false;
         let move4_add = false;
         let move5_add = false;
+        let  move6_add = false;
         //PERSONAGEM E OBSTÁCULO
 
         //TEMPO
@@ -245,7 +248,7 @@ cenario.classList.add('cenario1')
 
         setInterval(function mudarCenario()
         {
-            if(valor_tempo>35 && comecar==true && mudar_noite==false)
+            if(valor_tempo>50 && comecar==true && mudar_noite==false)
             {
                 nuvem.classList.remove('move_nuvem');
                 nuvem2.classList.remove('move_nuvem2');
@@ -376,6 +379,7 @@ bancoDeDados.ref('pontuacoes')
                 obstaculo.classList.remove('move_obstaculo3')
                 obstaculo.classList.remove('move_obstaculo4')
                 obstaculo.classList.remove('move_obstaculo5')
+                obstaculo.classList.remove('move_obstaculo6')
                 nuvem.classList.remove('move_nuvem');
                nuvem2.classList.remove('move_nuvem2');
                nuvem3.classList.remove('move_nuvem3');
@@ -383,6 +387,7 @@ bancoDeDados.ref('pontuacoes')
                 move3_add =false;
                 move4_add =false;
                 move5_add =false;
+                move6_add =false;
             
                 GameOver_menu.style.display='inline';//aparecer o GameOver
             
@@ -447,6 +452,7 @@ function enviar() {
             obstaculo.classList.remove('move_obstaculo3')
             obstaculo.classList.remove('move_obstaculo4')
             obstaculo.classList.remove('move_obstaculo5')
+            obstaculo.classList.remove('move_obstaculo6')
            
             func_comecar();//chamar a func_comecar de novo
         }
@@ -501,7 +507,7 @@ function enviar() {
         {
             botao1.classList.add('animacao_botao');//animação de escolha
             setTimeout(() => {
-                personagem.src = 'goncalvez_dias.png'//mudar sprite
+                personagem.src = 'gonzalves.gif'//mudar sprite
                 personagem.style.display = 'inline';//aparecer personagem após escolha
                 botao1.classList.remove('animacao_botao');//animação de escolha
                 escolheu_personagem = true;
@@ -540,7 +546,7 @@ function enviar() {
         let move_obstaculo3 = document.querySelector('.move_obstaculo3');
         let move_obstaculo4 = document.querySelector('.move_obstaculo4');        
         let move_obstaculo5 = document.querySelector('.move_obstaculo5');
-
+        let move_obstaculo6 = document.getElementById('move_obstaculo6')
         
         setInterval (function velocidades_obstaculos()
         {
@@ -587,6 +593,14 @@ function enviar() {
                     setTimeout(()=> {
                         obstaculo.classList.add('move_obstaculo5');
                         move5_add=true;
+                    },1000)
+                }
+                if(valor_tempo>90 && valor_tempo<120 && obstaculo_posicao_right>530 && obstaculo_posicao_right<600 && move6_add ==false)
+                {
+                    obstaculo.classList.remove('move_obstaculo5');
+                    setTimeout(()=> {
+                        obstaculo.classList.add('move_obstaculo6');
+                        move6_add=true;
                     },1000)
                 }
             }
