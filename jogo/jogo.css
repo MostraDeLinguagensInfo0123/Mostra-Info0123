@@ -65,7 +65,6 @@ header {
     position: relative;
     overflow: hidden;
 
-    
 }
 
 
@@ -105,7 +104,7 @@ input[type = 'text']:hover{
 }/*personagem principal*/
 
 .jump {
-    animation: pulo_animation 800ms linear;
+    animation: pulo_animation 700ms linear;
 }
 
 .move_obstaculo{
@@ -119,7 +118,7 @@ input[type = 'text']:hover{
     animation: obstaculo_animation  1s infinite linear; 
 }
 .move_obstaculo4{
-    animation: obstaculo_animation 0.9 infinite linear; 
+    animation: obstaculo_animation 0.9s infinite linear; 
 }
 .move_obstaculo5{
     animation: obstaculo_animation 0.8s infinite linear; 
@@ -144,13 +143,13 @@ input[type = 'text']:hover{
         bottom: 0px;
     }
     30%{
-        bottom: 130px;
+        bottom: 90px;
     }
     50%{
-        bottom: 170px
+        bottom: 110px
     }
     70%{
-        bottom: 130px;
+        bottom: 70px;
     }
     100%{
         bottom: 0px;
@@ -308,7 +307,7 @@ to {
 
 
 .cenario1{
-    background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#ffffff);
+    background: linear-gradient(#087edf,#53a8ee,#90b7d6,#ffffff,#50c261);
     
 }
 .cenario2{
@@ -362,6 +361,48 @@ to {
     margin:0;
     padding:0;
 }
+
+@keyframes animacao_lua
+{
+    0% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 10%;
+    }
+    20% {
+        opacity: 20%;
+    }
+    30% {
+        opacity: 30%;
+    }
+    40% {
+        opacity: 40%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    60% {
+        opacity: 60%;
+    }
+    70% {
+        opacity: 70%;
+    }
+    80% {
+        opacity: 80%;
+    }
+    90% {
+        opacity: 90%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.animacao_add_lua
+{
+    animation: animacao_lua 2.5s linear;
+}
 .sol{
     position: absolute;
     height: 150px;
@@ -401,3 +442,68 @@ to {
     right:33%;
     transform: rotate(20deg);
 }
+.nuvem{
+    position: absolute;
+    height: 80px;
+    bottom: 50%;
+    right: -140px;
+}
+.nuvem2{
+    position: absolute;
+    height: 80px;
+    bottom: 70%;
+    right: -160px;
+}
+.nuvem3{
+    position: absolute;
+    height: 80px;
+    bottom: 40%;
+    right: -210px;
+}
+
+.move_nuvem{
+animation: move_da_nuvem 2s infinite linear;
+}
+.move_nuvem2{
+    animation: move_da_nuvem2 2.7s infinite linear;
+ }
+ .move_nuvem3{
+        animation: move_da_nuvem2 3s infinite linear;
+ }
+
+@keyframes move_da_nuvem{
+
+    from{
+        right:-120px;
+    }
+    to {
+        right:600px;
+    }
+}
+    @keyframes move_da_nuvem2{
+
+        from{
+            right: -160px;
+        }
+        to {
+            right:600px;
+        }
+    }
+    @keyframes move_da_nuvem3{
+
+        from{
+            right: -200px;
+        }
+        to {
+            right:600px;
+        }
+    }
+
+   
+    .niveisDevelocidade{
+        position: absolute;
+        bottom: 50%;
+        right: 35%;
+    
+    }
+  
